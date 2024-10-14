@@ -1,0 +1,3 @@
+- **data-processing/**:
+  - Example Project: **CSV data cleaner** which can handle missing data, duplicates, and normalize data formats.
+  - Ideal Contributions: Add support for other file types, integrate data visualization, or improve performance for larger datasets.
