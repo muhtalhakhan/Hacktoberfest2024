@@ -68,8 +68,8 @@ Copy the next template into your file, delete the boilerplate data and fill the 
 
 
 ```
-name: Syed Owais Ali Shah
-institution/company: usman inistitute of technology
+name: Muhammad Talha Khan
+institution/company: Any Example University
 github:[**talha**](https://github.com/muhtalhakhan)
 
 ```
