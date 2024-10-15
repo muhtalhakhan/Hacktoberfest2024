@@ -50,7 +50,7 @@ Add a picture of your choice in `static/images/`. Accepted files are **png** and
 ```
 static/images/<YOUR-USERNAME>.png
 
-![owais](https://github.com/syedowaisalishah/Hacktoberfest2024/assets/113125582/29d03bdc-3d4f-42c6-a3ea-15197bd26440)
+![talha](https://github.com/muhtalhakhan/Hacktoberfest2024/assets/113125582/29d03bdc-3d4f-42c6-a3ea-15197bd26440)
 ```
 
 
@@ -59,7 +59,7 @@ static/images/<YOUR-USERNAME>.png
 Create a markdown file in your folder following the convention `content/participant/<your-name>.md`. Ex.
 
 ```
-  content/participant/syedowaisalishah.md
+  content/participant/talha.md
 ```
 
 
@@ -70,7 +70,7 @@ Copy the next template into your file, delete the boilerplate data and fill the 
 ```
 name: Syed Owais Ali Shah
 institution/company: usman inistitute of technology
-github:[**syedowaisalishah**](https://github.com/syedowaisalishah)
+github:[**talha**](https://github.com/muhtalhakhan)
 
 ```
 
