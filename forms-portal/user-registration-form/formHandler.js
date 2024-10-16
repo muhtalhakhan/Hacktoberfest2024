@@ -1,11 +1,13 @@
+// formHandler.js
+
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector('.user-registration-form');
 
     // Handle form submission
     form.addEventListener('submit', (e) => {
-        e.preventDefault();
+        e.preventDefault(); // Prevents the form from submitting and refreshing the page
 
-        // Collect form data
+        // Collect form data with trimming
         const fullName = form.querySelector('input[placeholder="Full Name"]').value.trim();
         const phoneNumber = form.querySelector('input[placeholder="Phone Number"]').value.trim();
         const emailId = form.querySelector('input[placeholder="Email ID"]').value.trim();
