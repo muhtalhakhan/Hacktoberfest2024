@@ -5,10 +5,11 @@
 
 <div align="center">
 
+<div align="center">
 <a href="https://github.com/muhtalhakhan/Hacktoberfest2024/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=muhtalhakhan/Hacktoberfest2024" />
-</a>  
-  </div>
+</a>
+</div>
 
 ## This Project Is Perfect For Your First Pull Request
 
