@@ -3,7 +3,7 @@
 
 ## Contributors of `Hacktoberfest 2024`
 
-<div align="center">
+<div>
 
 <a href="https://github.com/muhtalhakhan/Hacktoberfest2024/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=muhtalhakhan/Hacktoberfest2024" />
