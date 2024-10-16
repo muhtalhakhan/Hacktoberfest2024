@@ -1,54 +1,41 @@
-const fs = require("fs");
-const path = require("path");
+const fs = require('fs');
+const { program } = require('commander');
+const path = require('path');
 
-/**
- * Converts a JSON file to CSV format
- * @param {string} inputFile - Path to the input JSON file
- * @param {string} outputFile - Path to the output CSV file
- * @param {Object} options - Conversion options
- * @param {string} options.delimiter - CSV delimiter (default: ',')
- * @param {boolean} options.includeHeaders - Whether to include headers in CSV (default: true)
- */
-function convertJsonToCsv(inputFile, outputFile, options = {}) {
-  const delimiter = options.delimiter || ",";
+function convertJsonToCsv(inputFile, outputFile, options) {
+  const jsonData = JSON.parse(fs.readFileSync(inputFile, 'utf-8'));
+
+  // Check if jsonData is an array of objects
+  if (!Array.isArray(jsonData) || typeof jsonData[0] !== 'object') {
+    throw new Error('Input JSON must be an array of objects');
+  }
+
+  const delimiter = options.delimiter || ',';
   const includeHeaders = options.includeHeaders !== false;
 
-  try {
-    const jsonData = JSON.parse(fs.readFileSync(inputFile, "utf8"));
+  const headers = Object.keys(jsonData[0]);
+  const csvData = jsonData.map(row => headers.map(header => JSON.stringify(row[header])).join(delimiter));
 
-    if (!Array.isArray(jsonData)) {
-      throw new Error("Input JSON must be an array of objects");
-    }
-
-    const headers = Object.keys(jsonData[0]);
-
-    let csvContent = "";
-    if (includeHeaders) {
-      csvContent += headers.join(delimiter) + "\n";
-    }
-
-    jsonData.forEach((obj) => {
-      const row = headers.map((header) => {
-        const value = obj[header];
-        return typeof value === "string" ? `"${value}"` : value;
-      });
-      csvContent += row.join(delimiter) + "\n";
-    });
-
-    fs.writeFileSync(outputFile, csvContent, "utf8");
-
-    console.log(`Conversion complete. CSV file saved as ${outputFile}`);
-  } catch (error) {
-    console.error("Error during conversion:", error.message);
+  if (includeHeaders) {
+    csvData.unshift(headers.join(delimiter));
   }
+
+  fs.writeFileSync(outputFile, csvData.join('\n'));
+  console.log(`CSV file saved as ${outputFile}`);
 }
 
-const inputFile = path.join(__dirname, "input.json");
-const outputFile = path.join(__dirname, "output.csv");
+// Set up CLI
+program
+  .version('1.0.0')
+  .description('Convert JSON to CSV')
+  .argument('<inputFile>', 'Input JSON file')
+  .argument('<outputFile>', 'Output CSV file')
+  .option('-d, --delimiter <char>', 'Specify the delimiter (default is ,)', ',')
+  .option('-H, --no-headers', 'Exclude headers in the CSV output')
+  .action((inputFile, outputFile, options) => {
+    const inputFilePath = path.resolve(__dirname, inputFile);
+    const outputFilePath = path.resolve(__dirname, outputFile);
+    convertJsonToCsv(inputFilePath, outputFilePath, options);
+  });
 
-convertJsonToCsv(inputFile, outputFile, {
-  delimiter: ",",
-  includeHeaders: true,
-});
-
-module.exports = { convertJsonToCsv };
+program.parse(process.argv);

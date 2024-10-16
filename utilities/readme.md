@@ -66,3 +66,18 @@ The script will throw an error if:
 
 The input file is not in the correct format (e.g., the JSON is not an array of objects).
 The input file cannot be read due to permissions or path issues.
+
+# JSON to CSV Converter (CLI Support)
+
+The `json-to-csv.js` script now supports command-line interface (CLI) usage, allowing users to easily convert JSON files to CSV format via the terminal.
+
+## Usage
+
+```bash
+node jsontocsv.js <inputFile> <outputFile> [options]
+<inputFile>: The path to the JSON file that needs to be converted.
+<outputFile>: The path where the CSV file will be saved.
+[options]: Optional flags to customize the conversion process.
+Available Options
+--delimiter <delimiter>: Specifies a custom delimiter for the CSV file (default is ,).
+--no-headers: Excludes headers (column names) from the CSV output.
