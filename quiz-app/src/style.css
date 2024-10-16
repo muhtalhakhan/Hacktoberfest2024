@@ -26,7 +26,7 @@ main {
   align-items: center;
 }
 .box {
-  background-color: white;
+  background-color: #42a5f55c;
   width: 42%;
   height: 300px;
   padding: 15px;
@@ -43,15 +43,20 @@ main {
 }
 .btn {
   outline: none;
-  width: 100%;
+  width: fit-content;
   font-size: 1rem;
   background-color: #3498db;
-  border: none;
+  border: solid whitesmoke 1px;
   border-radius: 5px;
   font-weight: 500;
-  padding: 5px;
+  padding: 5px 15px;
+  margin: 5px 15px;
   font-family: Roboto;
   color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 48%;
+  transform: translateX(-50%);
   transition: all 0.3s;
 }
 .btn:hover {
