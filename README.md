@@ -4,11 +4,9 @@
 ## Contributors of `Hacktoberfest 2024`
 
 <div align="center">
-
-<div align="center">
-<a href="https://github.com/muhtalhakhan/Hacktoberfest2024/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=muhtalhakhan/Hacktoberfest2024" />
-</a>
+  <a href="https://github.com/muhtalhakhan/Hacktoberfest2024/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=muhtalhakhan/Hacktoberfest2024" />
+  </a>  
 </div>
 
 ## This Project Is Perfect For Your First Pull Request
