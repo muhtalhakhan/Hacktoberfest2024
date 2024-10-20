@@ -17,13 +17,16 @@ If there are specific dependencies, you should install them using a package mana
 
 ```bash
 pip install -r ../requirements.txt
+```
 
 If no requirements.txt is present, manually install necessary dependencies. Example for Python:
 
 ```bash
 pip install pandas numpy
+```
 
 N.B - Replace pandas and numpy with the actual dependencies your scripts require.
+
 
 ### 3. Running the Scripts
 
@@ -34,19 +37,19 @@ Each script in this folder has a specific purpose. Below are examples of how to 
 
 ```bash
 python preprocess_data.py
-
+```
     **Analyzing Data**: 
     This script performs the main analysis on the cleaned data.
 
 ```bash
 python analyze_data.py
-
+```
     **Generating Reports**: 
     After analyzing data, you can generate reports or summaries using the following script:
 
 ```bash
 python generate_report.py
-
+```
 ### 4. Input and Output Data
 
     **Input Data**: 
@@ -81,12 +84,12 @@ If you need to add new data processing scripts, ensure you:
 
 ```bash
 python preprocess_data.py --input ../data/raw_data.csv --output ../data/cleaned_data.csv
-
+```
 **Analyze Data**:
 
 ```bash
 python analyze_data.py --input ../data/cleaned_data.csv --output ../data/analysis_results.csv
-
+```
 This allows flexibility in specifying input and output file paths.
 
 ### 8. Additional Notes
