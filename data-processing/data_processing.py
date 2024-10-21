@@ -80,7 +80,7 @@ def main():
     file_path = r'C:\Users\Venky\Desktop\Lab\example.csv'  # Path to your file
     df = load_data(file_path)
     
-    print_summary(df)  # Print summary of the dataset
+    print_summary(df)  # Printing the summary of the dataset
 
     df = handle_missing_data(df, method='mean')
     df = remove_duplicates(df)
