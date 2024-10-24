@@ -113,7 +113,8 @@ def print_summary(df):
     print(df.isnull().sum())
 
 def main():
-    file_path = r'C:\Users\Venky\Desktop\hacktoctober\Hacktoberfest_Venkat\Hacktoberfest2024\JavaScript-Apps-Programs\test-data\sample.csv'  # Path to your file (CSV, Excel, or JSON)
+    # Path to your file (CSV, Excel, or JSON)
+    file_path = r'C:\Users\Venky\Desktop\hacktoctober\Hacktoberfest2024\JavaScript-Apps-Programs\test-data\sample.csv'
     
     # Loading the dataset
     df = load_data(file_path)
