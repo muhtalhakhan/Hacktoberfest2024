@@ -1,3 +1,10 @@
+# Project: CSV Data Cleaner
+
+# Description: This Python script processes datasets (CSV or Excel files) by cleaning missing data, removing duplicates, and normalizing formats.
+
+# Author: Maisagalla Venkatesh
+
+
 import pandas as pd
 import sys
 import os
@@ -90,3 +97,8 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+# - **data-processing/**
+# - Example Project: **CSV data cleaner** which can handle missing data, duplicates, and normalize data formats.
+# - Ideal Contributions: Add support for other file types, integrate data visualization, or improve performance for larger datasets.
