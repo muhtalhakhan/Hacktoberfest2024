@@ -1,3 +1,0 @@
-- **api-gateway/**:
-  - Example Project: A **RESTful API gateway** that supports user authentication and connects multiple services.
-  - Ideal Contributions: Enhance the security with OAuth, add rate-limiting, or create sample client applications to demonstrate usage.

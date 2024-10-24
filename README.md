@@ -4,11 +4,11 @@
 ## Contributors of `Hacktoberfest 2024`
 
 <div align="center">
+  <a href="https://github.com/muhtalhakhan/Hacktoberfest2024/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=muhtalhakhan/Hacktoberfest2024" />
+  </a>  
+</div>
 
-<a href="https://github.com/muhtalhakhan/Hacktoberfest2024/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=muhtalhakhan/Hacktoberfest2024" />
-</a>  
-  </div>
 
 ## This Project Is Perfect For Your First Pull Request
 
@@ -22,9 +22,9 @@
  <img src="https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99" alt="Star Badge"/>
  <a href="https://github.com/muhtalhakhan" ><img src="https://img.shields.io/badge/Contributions-welcome-violet.svg?style=flat&logo=git" alt="Contributions" /></a>
 
-<a href="https://github.com/muhtalhakhan/hacktoberfest2024/pulls"><img src="https://img.shields.io/github/issues-pr/muhtalhakhan/hacktoberfest2024" alt="Pull Requests Badge"/></a>
-<a href="https://github.com/muhtalhakhan/hacktoberfest2024/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/muhtalhakhan/hacktoberfest2024?color=2b9348"></a>
-<a href="https://github.com/muhtalhakhan/hacktoberfest2024/blob/master/LICENSE"><img src="https://img.shields.io/github/license/muhtalhakhan/hacktoberfest2024?color=2b9348" alt="License Badge"/></a>
+  <a href="https://github.com/muhtalhakhan/hacktoberfest2024/pulls"><img src="https://img.shields.io/github/issues-pr/muhtalhakhan/hacktoberfest2024" alt="Pull Requests Badge"/></a>
+  <a href="https://github.com/muhtalhakhan/hacktoberfest2024/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/muhtalhakhan/hacktoberfest2024?color=2b9348"></a>
+  <a href="https://github.com/muhtalhakhan/hacktoberfest2024/blob/master/LICENSE"><img src="https://img.shields.io/github/license/muhtalhakhan/hacktoberfest2024?color=2b9348" alt="License Badge"/></a>
 
 </div>
 
@@ -68,8 +68,8 @@ Copy the next template into your file, delete the boilerplate data and fill the 
 
 
 ```
-name: Syed Owais Ali Shah
-institution/company: usman inistitute of technology
+name: Muhammad Talha Khan
+institution/company: Any Example University
 github:[**talha**](https://github.com/muhtalhakhan)
 
 ```

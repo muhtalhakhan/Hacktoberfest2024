@@ -2,16 +2,16 @@ name: Hacktoberfest2024 - muhtalhakhan CI
 
 on:
   push:
-    branches: [ $default-branch ]
+    branches: [ "main" ]  # Replace "main" with the name of your default branch if different
   pull_request:
-    branches: [ $default-branch ]
+    branches: [ "main" ]  # Replace "main" with the name of your default branch if different
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
 
       - name: Run a one-line script
         run: echo Hello from Muhammad Talha Khan

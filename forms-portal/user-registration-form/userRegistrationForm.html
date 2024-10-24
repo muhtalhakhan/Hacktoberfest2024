@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+
+
+<head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+
+</head>
+<body>
     <div class="user-registration-form-container">
-      <h1>User Registration Form</h1>
-      <form class="user-registration-form">
-        <input type="text" placeholder="Full Name" />
-        <input type="number" placeholder="Phone Number" />
-        <input type="text" placeholder="Email ID" />
-        <textarea placeholder="Comments"></textarea>
-        <button>Submit</button>
-      </form>
+        <h1>User Registration Form</h1>
+        <form class="user-registration-form">
+            <input type="text" placeholder="Full Name" required />
+            <input type="number" placeholder="Phone Number" required />
+            <input type="text" placeholder="Email ID" required />
+            <textarea placeholder="Comments" required></textarea>
+            <button>Submit</button>
+        </form>
     </div>
-  </body>
+    <script src="./formHandler.js"></script>
+</body>
+
 </html>
+
