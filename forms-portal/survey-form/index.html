@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Survey Template</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="survey-container">
+        <h1>Feedback Survey</h1>
+        <p>We appreciate your feedback! This survey will take about 5 minutes to complete.</p>
+
+        <form>
+            <div class="question">
+                <h2>Demographic Information</h2>
+                <label for="age">Age Range:</label>
+                <select id="age" name="age">
+                    <option value="under_18">Under 18</option>
+                    <option value="18-24">18-24</option>
+                    <option value="25-34">25-34</option>
+                    <option value="35-44">35-44</option>
+                    <option value="45-54">45-54</option>
+                    <option value="55-64">55-64</option>
+                    <option value="65_plus">65 and over</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <h2>Gender:</h2>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="non_binary"> Non-binary</label>
+                <label><input type="radio" name="gender" value="prefer_not"> Prefer not to say</label>
+            </div>
+
+            <div class="question">
+                <h2>Experience Questions</h2>
+                <label for="satisfaction">Satisfaction Level:</label>
+                <select id="satisfaction" name="satisfaction">
+                    <option value="1">1 - Very Dissatisfied</option>
+                    <option value="2">2 - Dissatisfied</option>
+                    <option value="3">3 - Neutral</option>
+                    <option value="4">4 - Satisfied</option>
+                    <option value="5">5 - Very Satisfied</option>
+                </select>
+
+                <label>What features do you use most often?</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="features" value="feature_a"> Feature A</label>
+                    <label><input type="checkbox" name="features" value="feature_b"> Feature B</label>
+                    <label><input type="checkbox" name="features" value="feature_c"> Feature C</label>
+                    <label><input type="checkbox" name="features" value="feature_d"> Feature D</label>
+                    <label><input type="checkbox" name="features" value="other"> Other: <input type="text" name="other_feature" placeholder="Specify..."></label>
+                </div>
+
+                <label>How likely are you to recommend us?</label>
+                <div class="rating-scale">
+                    <input type="radio" name="recommend" value="0"> 0
+                    <input type="radio" name="recommend" value="1"> 1
+                    <input type="radio" name="recommend" value="2"> 2
+                    <input type="radio" name="recommend" value="3"> 3
+                    <input type="radio" name="recommend" value="4"> 4
+                    <input type="radio" name="recommend" value="5"> 5
+                    <input type="radio" name="recommend" value="6"> 6
+                    <input type="radio" name="recommend" value="7"> 7
+                    <input type="radio" name="recommend" value="8"> 8
+                    <input type="radio" name="recommend" value="9"> 9
+                    <input type="radio" name="recommend" value="10"> 10
+                </div>
+            </div>
+
+            <div class="question">
+                <h2>Feedback</h2>
+                <label for="likes">What do you like most about our product/service?</label>
+                <textarea id="likes" name="likes" placeholder="Your answer..."></textarea>
+
+                <label for="improvements">What improvements would you suggest?</label>
+                <textarea id="improvements" name="improvements" placeholder="Your answer..."></textarea>
+            </div>
+
+            <div class="submit-section">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
