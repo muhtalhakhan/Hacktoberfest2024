@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+- **utilities/**:
+  - Example Project: A **JSON to CSV file converter** script with options to customize the CSV format.
+  - Ideal Contributions: Add support for other file formats, include a GUI for easier use, or enhance error handling.
+=======
 Utilities Folder
 This folder contains utility scripts that help in performing various tasks. Each utility is designed to be modular and extendable, allowing for easy integration into other projects.
 
@@ -81,3 +86,4 @@ node jsontocsv.js <inputFile> <outputFile> [options]
 Available Options
 --delimiter <delimiter>: Specifies a custom delimiter for the CSV file (default is ,).
 --no-headers: Excludes headers (column names) from the CSV output.
+>>>>>>> 6b4f976b66418ae46d4a60a5769d76d2641d812b
