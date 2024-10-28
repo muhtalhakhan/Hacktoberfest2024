@@ -1,0 +1,183 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+}
+
+.survey-container {
+    max-width: 800px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+select, 
+input[type="text"], 
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+select:focus,
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #007BFF;
+}
+
+.checkbox-group {
+    margin-bottom: 15px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+.rating-scale {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+textarea {
+    height: 80px;
+}
+
+.submit-section {
+    text-align: center;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+}
+
+.survey-container {
+    max-width: 800px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+select, 
+input[type="text"], 
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+select:focus,
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #007BFF;
+}
+
+.checkbox-group {
+    margin-bottom: 15px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+.rating-scale {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+textarea {
+    height: 80px;
+}
+
+.submit-section {
+    text-align: center;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
