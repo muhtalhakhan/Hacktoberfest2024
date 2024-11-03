@@ -5,13 +5,12 @@
 import pandas as pd
 import sys
 import os
-import json
 
 def load_data(file_path):
     """
-    Loads the dataset from a file, supports CSV, Excel, and JSON.
+    Load dataset from a file. Supports CSV, Excel, and JSON formats.
 
-    Contributors: You can extend this function to support more file types (e.g., XML, Parquet) or integrate an API for loading remote datasets.
+    Contributors: Extend to support additional file types (e.g., XML, Parquet) or integrate an API for remote datasets.
     """
     file_extension = os.path.splitext(file_path)[1]
     try:
@@ -32,12 +31,11 @@ def load_data(file_path):
 
 def handle_missing_data(df, method='mean'):
     """
-    Handles missing data by filling with mean, median, or dropping rows for numeric columns.
-    
-    Contributors: You can add more sophisticated missing data handling techniques, such as interpolation, or machine learning imputation methods.
+    Handle missing data by filling numeric columns with mean, median, or dropping rows.
+
+    Contributors: Add advanced techniques like interpolation or ML-based imputation.
     """
     numeric_cols = df.select_dtypes(include=['number']).columns
-
     if method == 'mean':
         df[numeric_cols] = df[numeric_cols].fillna(df[numeric_cols].mean())
     elif method == 'median':
@@ -45,17 +43,16 @@ def handle_missing_data(df, method='mean'):
     elif method == 'drop':
         df.dropna(inplace=True)
     else:
-        print("Invalid method for handling missing data. Using mean as default.")
+        print("Invalid method specified. Using mean as default.")
         df[numeric_cols] = df[numeric_cols].fillna(df[numeric_cols].mean())
-
     print("Missing data handled.")
     return df
 
 def remove_duplicates(df):
     """
-    Removes duplicate rows from the dataset.
+    Remove duplicate rows.
 
-    Contributors: This can be extended to allow users to define which columns should be checked for duplicates.
+    Contributors: Allow specification of columns for duplicate checking.
     """
     initial_rows = df.shape[0]
     df.drop_duplicates(inplace=True)
@@ -65,9 +62,9 @@ def remove_duplicates(df):
 
 def normalize_data(df):
     """
-    Normalizes numeric data and date formats.
+    Normalize numeric data and date formats.
 
-    Contributors: Consider adding more normalization options (e.g., min-max scaling or standardization).
+    Contributors: Add more normalization options like min-max scaling or standardization.
     """
     for col in df.columns:
         if pd.api.types.is_numeric_dtype(df[col]):
@@ -79,13 +76,12 @@ def normalize_data(df):
 
 def save_cleaned_data(df, file_path):
     """
-    Saves the cleaned dataset to a new file in CSV, Excel, or JSON format.
+    Save the cleaned dataset in CSV, Excel, or JSON format.
 
-    Contributors: Extend this function to save data in other formats like Parquet, or even push the cleaned data to a cloud storage or database.
+    Contributors: Support additional formats like Parquet, or cloud/database storage.
     """
     clean_file_path = file_path.replace('.csv', '_cleaned.csv').replace('.xlsx', '_cleaned.xlsx').replace('.json', '_cleaned.json')
     file_extension = os.path.splitext(file_path)[1]
-
     try:
         if file_extension == '.csv':
             df.to_csv(clean_file_path, index=False)
@@ -100,9 +96,9 @@ def save_cleaned_data(df, file_path):
 
 def print_summary(df):
     """
-    Prints a summary of the dataset, including number of rows, columns, and data types.
+    Print a summary of the dataset: rows, columns, data types, and missing values.
 
-    Contributors: You can add visualizations to provide more insights into the data distribution or other aspects of the dataset.
+    Contributors: Add visualizations for data distribution or more insights.
     """
     print("\nDataset Summary:")
     print(f"Number of rows: {df.shape[0]}")
@@ -113,25 +109,25 @@ def print_summary(df):
     print(df.isnull().sum())
 
 def main():
-    # Path to your file (CSV, Excel, or JSON)
-    file_path = r'C:\Users\Venky\Desktop\hacktoctober\Hacktoberfest2024\JavaScript-Apps-Programs\test-data\sample.csv'
+    # Update this file path as needed
+    file_path = 'path/to/your/dataset.csv'
     
-    # Loading the dataset
+    # Load the dataset
     df = load_data(file_path)
 
-    # Printing the summary of the dataset
+    # Print dataset summary
     print_summary(df)
 
-    # Handling missing data
+    # Handle missing data
     df = handle_missing_data(df, method='mean')
 
-    # Removing duplicates
+    # Remove duplicates
     df = remove_duplicates(df)
 
-    # Normalizing the data
+    # Normalize data
     df = normalize_data(df)
 
-    # Saving the cleaned data
+    # Save cleaned data
     save_cleaned_data(df, file_path)
 
 if __name__ == '__main__':
